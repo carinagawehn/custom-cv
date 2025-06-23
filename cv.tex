@@ -1,0 +1,97 @@
+\documentclass{customcv}
+
+\author{John Doe}
+\date{\today}
+\title{Title}
+
+\usepackage[ngerman]{babel}
+
+\primary{DodgerBlue4}
+
+\begin{document}
+
+\makecontactheader{
+  \location{location},
+  \mail{mail},
+  \phone{phone},
+  \birthday{birthday},
+  \linkedin{linkedin},
+  \github{github}
+}
+
+\section{Education}
+
+\eduentry{BS}
+{University}
+{course of study}
+{Time Start - Time End}
+{
+  \begin{itemize}
+    \item Some bullets you want to add here
+    \item You could also just add plain text or any other stuff you want
+  \end{itemize}
+}
+
+\section{Experience}
+
+\expentry{Company}
+{Title}
+{Time Start - Time End}
+{
+  \smallskip
+  Itemize or plain Text as you want.
+  You can also customize the section names.
+}
+
+\section{Skills}
+
+\entry{Keyword:}{List of Skills}
+
+
+\section{Explaination}
+
+The CV contains multiple different sections as shown in this example.
+The section heading are customizable and the entrys can be used multiple times.
+
+\subsection{Header}
+
+The Header is created by the \texttt{\textbackslash{}makecontactheader} command.
+That command takes a comma separated list to place under the authors name.
+This list may contain Icons and links.
+Some of them are already simplified by a command that has the same name as
+displayed in the header of this document.
+Those commands add an Icon and the link for the provided username if appropriate.
+
+\subsection{EduEntry}
+
+Usage:
+\texttt{\textbackslash{}eduentry\{Degree\}\{University\}\{Course of study\}\{Dates\}\{Some Additional info\}}
+
+The EduEntry makes a table with 3 columns.
+The first contains the degree and the last the Dates.
+The University is bold and the course of study follows.
+The Additional Info can pe plain text or an itemize etc.
+
+\subsection{ExpEntry}
+
+Usage:
+\texttt{\textbackslash{}expentry\{Company\}\{Title\}\{Dates\}\{Some Additional info\}}
+
+The ExpEntry is the same as the EduEntry without the Degree Column.
+
+\subsection{Entry}
+
+Usage:
+\texttt{\textbackslash{}entry\{Keyword\}\{Text\}}
+
+Just a simple entry with a bold Keyword and normal Text.
+
+
+\subsection{Color}
+
+The primary color is set by \texttt{\textbackslash{}primary\{DodgerBlue4\}} and
+expects a sting with an x11 name of a color (see the xcolor package documentation).
+
+
+
+\end{document}

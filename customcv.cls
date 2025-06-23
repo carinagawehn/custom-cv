@@ -87,6 +87,11 @@
   {}
   [\titlerule]
 
+\titleformat{\subsection}
+  {\color{PrimaryColor} \large\bfseries\scshape\raggedright}
+  {}{0em}
+  {}
+  []
 
 % Entries %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
