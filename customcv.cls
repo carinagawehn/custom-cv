@@ -12,6 +12,7 @@
 \RequirePackage[x11names]{xcolor}
 \RequirePackage{enumitem}
 \RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
 
 % Styling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \faStyle{regular}
@@ -74,7 +75,7 @@
 \pagestyle{fancy}
 \fancyfoot[L]{Zuletzt aktualisiert am \@date}
 \fancyfoot[C]{}
-\fancyfoot[R]{\thepage}
+\fancyfoot[R]{Seite \thepage{} von~\pageref{LastPage}}
 % remove header from this packages default
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead{}
